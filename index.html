@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>REACT</title>
+  <link rel="icon" type="image/x-icon" href="static/images/Tsinghua_University_Logo.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Demonstration for REACT</h1>
+              <h2 class="subtitle has-text-centered"> <!-- Adjusted font size and alignment -->
+                REACT: Real-time Environment-Adaptive architecture for Continuous formation navigaTion.
+              </h2>
+            <div class="is-size-5 publication-authors">
+
+              
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=ncDpC9gAAAAJ&hl=en" target="_blank">Jianghong Dong</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=o9zHCC0AAAAJ&hl=zh-CN&inst=3212728378801010220&oi=ao" target="_blank">Yifeng Zhang</a><sup>2</sup>,
+                </span>
+                  <span class="author-block">
+                    <a href="https://wjiawei.com/" target="_blank">Jiawei Wang</a><sup>3</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=MlK35S4AAAAJ&hl=en" target="_blank">Mengchi Cai</a><sup>1</sup>,
+                  </span>
+                  
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=x58fnLQAAAAJ&hl=en" target="_blank">Keqiang Li</a><sup>1</sup>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://www.marmotlab.org/bio.html" target="_blank">Guillaume Sartoretti</a><sup>2</sup>
+                  </span>
+
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Tsinghua University, <sup>2</sup>National University of Singapore, <sup>3</sup>University of Michigan</span>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="padding-top: 1.6rem;">
+      <h2 class="title is-3;" style="text-align: center;">Real-World Experiments</h2>
+      <h2 class="title is-4" style="margin-top: 3rem; text-align: center;">1. Formation Convergence</h2>
+      <video poster="" id="tree"controls muted playsinline height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/real-convergence.mp4"
+        type="video/mp4">
+      </video>
+  <div class="motiv-contrib-block">
+    <div class="contrib-list">
+      <div class="contrib-accordion">
+        <div class="contrib-item contrib-item-clickable" onclick="toggleContribItem(this)">
+          <span class="contrib-index"><i class="fas fa-chart-bar" style="font-size:1.3rem; color:#87CEEB;"></i></span>
+          <div class="contrib-content">
+            <p class="contrib-heading">Results &amp; Metrics <i class="fas fa-chevron-down motiv-play-hint motiv-chevron"></i><span class="motiv-click-hint">click</span></p>
+            <p>Click to view quantitative evaluation results including formation error metrics and speed profiles. For the correspondence between WMR indices in the video above and those in the figures, see the <em>WMR-Index</em> tab.</p>
+          </div>
+        </div>
+        <div class="motiv-inline-video">
+          <div class="contrib-metric-tabs">
+            <button class="contrib-metric-tab is-active" data-metric="formation-error">Formation Error Metric</button>
+            <button class="contrib-metric-tab" data-metric="velocity">Speed</button>
+            <button class="contrib-metric-tab" data-metric="convergence-wmr-index">WMR-Index</button>
+          </div>
+          <div class="contrib-metric-panel" id="metric-formation-error">
+            <img src="static/images/convergence-metric.jpg" alt="Formation Error Metric" style="width:50%; display:block; margin:0 auto;">
+          </div>
+          <div class="contrib-metric-panel" id="metric-velocity" style="display:none;">
+            <img src="static/images/convergence-sped.jpg" alt="Velocity Metric" style="width:50%; display:block; margin:0 auto;">
+          </div>
+          <div class="contrib-metric-panel" id="metric-convergence-wmr-index" style="display:none;">
+            <img src="static/images/WMR-index-V1.jpg" alt="WMR-Index" style="width:50%; display:block; margin:0 auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <h2 class="title is-4" style="margin-top: 3rem; text-align: center;">2.1 Obstacle Avoidance: Inside</h2>
+      <video poster="" id="tree"  controls muted playsinline height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/real-obs-inside.mp4"
+        type="video/mp4">
+      </video>
+  <div class="motiv-contrib-block">
+    <div class="contrib-list">
+      <div class="contrib-accordion">
+        <div class="contrib-item contrib-item-clickable" onclick="toggleContribItem(this)">
+          <span class="contrib-index"><i class="fas fa-chart-bar" style="font-size:1.3rem; color:#87CEEB;"></i></span>
+          <div class="contrib-content">
+            <p class="contrib-heading">Results &amp; Metrics <i class="fas fa-chevron-down motiv-play-hint motiv-chevron"></i><span class="motiv-click-hint">click</span></p>
+            <p>Click to view quantitative evaluation results including formation error metrics and lateral position (WMR 2 and WMR 3, whose y-trajectories change for obstacle avoidance). For the correspondence between WMR indices in the video above and those in the figures, see the <em>WMR-Index</em> tab.</p>
+          </div>
+        </div>
+        <div class="motiv-inline-video">
+          <div class="contrib-metric-tabs">
+            <button class="contrib-metric-tab is-active" data-metric="obs-inside-formation-error">Formation Error Metric</button>
+            <button class="contrib-metric-tab" data-metric="obs-inside-lateral">Lateral Position</button>
+            <button class="contrib-metric-tab" data-metric="obs-inside-wmr-index">WMR-Index</button>
+          </div>
+          <div class="contrib-metric-panel" id="metric-obs-inside-formation-error">
+            <img src="static/images/obs-inside-metric.jpg" alt="Formation Error Metric" style="width:50%; display:block; margin:0 auto;">
+          </div>
+          <div class="contrib-metric-panel" id="metric-obs-inside-lateral" style="display:none;">
+            <img src="static/images/obs-inside-y.jpg" alt="Lateral Position" style="width:50%; display:block; margin:0 auto;">
+          </div>
+          <div class="contrib-metric-panel" id="metric-obs-inside-wmr-index" style="display:none;">
+            <img src="static/images/WMR-index-V2.jpg" alt="WMR-Index" style="width:50%; display:block; margin:0 auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <h2 class="title is-4" style="margin-top: 3rem; text-align: center;">2.2 Obstacle Avoidance: Outside</h2>
+      <video poster="" id="tree"  controls muted playsinline height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/real-obs-outside.mp4"
+        type="video/mp4"> 
+      </video>
+  <div class="motiv-contrib-block">
+    <div class="contrib-list">
+      <div class="contrib-accordion">
+        <div class="contrib-item contrib-item-clickable" onclick="toggleContribItem(this)">
+          <span class="contrib-index"><i class="fas fa-chart-bar" style="font-size:1.3rem; color:#87CEEB;"></i></span>
+          <div class="contrib-content">
+            <p class="contrib-heading">Results &amp; Metrics <i class="fas fa-chevron-down motiv-play-hint motiv-chevron"></i><span class="motiv-click-hint">click</span></p>
+            <p>Click to view quantitative evaluation results including formation error metrics and lateral position (WMR 2 and WMR 3, whose y-trajectories change for obstacle avoidance). For the correspondence between WMR indices in the video above and those in the figures, see the <em>WMR-Index</em> tab.</p>
+          </div>
+        </div>
+        <div class="motiv-inline-video">
+          <div class="contrib-metric-tabs">
+            <button class="contrib-metric-tab is-active" data-metric="obs-outside-formation-error">Formation Error Metric</button>
+            <button class="contrib-metric-tab" data-metric="obs-outside-lateral">Lateral Position</button>
+            <button class="contrib-metric-tab" data-metric="obs-outside-wmr-index">WMR-Index</button>
+          </div>
+          <div class="contrib-metric-panel" id="metric-obs-outside-formation-error">
+            <img src="static/images/obs-outside-metric.jpg" alt="Formation Error Metric" style="width:50%; display:block; margin:0 auto;">
+          </div>
+          <div class="contrib-metric-panel" id="metric-obs-outside-lateral" style="display:none;">
+            <img src="static/images/obs-outside-y.jpg" alt="Lateral Position" style="width:50%; display:block; margin:0 auto;">
+          </div>
+          <div class="contrib-metric-panel" id="metric-obs-outside-wmr-index" style="display:none;">
+            <img src="static/images/WMR-index-V2.jpg" alt="WMR-Index" style="width:50%; display:block; margin:0 auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <h2 class="title is-4" style="margin-top: 3rem; text-align: center;">2.3 Obstacle Avoidance: Dynamic</h2>
+      <video poster="" id="tree"  controls muted playsinline height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/real-obs-dynamic.mp4"
+        type="video/mp4"> 
+      </video>
+  <div class="motiv-contrib-block">
+    <div class="contrib-list">
+      <div class="contrib-accordion">
+        <div class="contrib-item contrib-item-clickable" onclick="toggleContribItem(this)">
+          <span class="contrib-index"><i class="fas fa-chart-bar" style="font-size:1.3rem; color:#87CEEB;"></i></span>
+          <div class="contrib-content">
+            <p class="contrib-heading">Results &amp; Metrics <i class="fas fa-chevron-down motiv-play-hint motiv-chevron"></i><span class="motiv-click-hint">click</span></p>
+            <p>Click to view quantitative evaluation results including formation error metrics and lateral position (WMR 2 and WMR 3, whose y-trajectories change for obstacle avoidance), as well as the view from the motion capture system. For the correspondence between WMR indices in the video above and those in the figures, see the <em>WMR-Index</em> tab.</p>
+          </div>
+        </div>
+        <div class="motiv-inline-video">
+          <div class="contrib-metric-tabs">
+            <button class="contrib-metric-tab is-active" data-metric="obs-dynamic-formation-error">Formation Error Metric</button>
+            <button class="contrib-metric-tab" data-metric="obs-dynamic-lateral">Lateral Position</button>
+            <button class="contrib-metric-tab" data-metric="obs-dynamic-mocap">Motion Capture View</button>
+            <button class="contrib-metric-tab" data-metric="obs-dynamic-wmr-index">WMR-Index</button>
+          </div>
+          <div class="contrib-metric-panel" id="metric-obs-dynamic-formation-error">
+            <img src="static/images/obs-dynamic-metric.jpg" alt="Formation Error Metric" style="width:50%; display:block; margin:0 auto;">
+          </div>
+          <div class="contrib-metric-panel" id="metric-obs-dynamic-lateral" style="display:none;">
+            <img src="static/images/obs-dynamic-y.jpg" alt="Lateral Position" style="width:50%; display:block; margin:0 auto;">
+          </div>
+          <div class="contrib-metric-panel" id="metric-obs-dynamic-mocap" style="display:none;">
+            <video controls playsinline style="width:100%; display:block; margin:0 auto;">
+              <source src="static/videos/obs-dynamic-FZMotion.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="contrib-metric-panel" id="metric-obs-dynamic-wmr-index" style="display:none;">
+            <img src="static/images/WMR-index-V2.jpg" alt="WMR-Index" style="width:50%; display:block; margin:0 auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <h2 class="title is-4" style="margin-top: 3rem; text-align: center;">3. Formation Transition</h2>
+      <video poster="" id="tree"  controls muted playsinline height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/real-transition.mp4"
+        type="video/mp4"> 
+      </video>
+  <div class="motiv-contrib-block">
+    <div class="contrib-list">
+      <div class="contrib-accordion">
+        <div class="contrib-item contrib-item-clickable" onclick="toggleContribItem(this)">
+          <span class="contrib-index"><i class="fas fa-chart-bar" style="font-size:1.3rem; color:#87CEEB;"></i></span>
+          <div class="contrib-content">
+            <p class="contrib-heading">Results &amp; Metrics <i class="fas fa-chevron-down motiv-play-hint motiv-chevron"></i><span class="motiv-click-hint">click</span></p>
+            <p>Click to view quantitative evaluation results including formation error metrics and lateral position. For the correspondence between WMR indices in the video above and those in the figures, see the <em>WMR-Index</em> tab.</p>
+          </div>
+        </div>
+        <div class="motiv-inline-video">
+          <div class="contrib-metric-tabs">
+            <button class="contrib-metric-tab is-active" data-metric="transition-formation-error">Formation Error Metric</button>
+            <button class="contrib-metric-tab" data-metric="transition-lateral">Lateral Position</button>
+            <button class="contrib-metric-tab" data-metric="transition-wmr-index">WMR-Index</button>
+          </div>
+          <div class="contrib-metric-panel" id="metric-transition-formation-error">
+            <img src="static/images/transition-metric.jpg" alt="Formation Error Metric" style="width:50%; display:block; margin:0 auto;">
+          </div>
+          <div class="contrib-metric-panel" id="metric-transition-lateral" style="display:none;">
+            <img src="static/images/transition-y.jpg" alt="Lateral Position" style="width:50%; display:block; margin:0 auto;">
+          </div>
+          <div class="contrib-metric-panel" id="metric-transition-wmr-index" style="display:none;">
+            <img src="static/images/WMR-index-V2.jpg" alt="WMR-Index" style="width:50%; display:block; margin:0 auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="padding-top: 1.5rem;">
+      <h2 class="title is-3;" style="text-align: center;">Simulation</h2>
+      <h2 class="title is-4" style="margin-top: 3rem; text-align: center;">1. Formation Navigation in Obstacle-Rich Environments</h2>
+      <video poster="" id="tree"  controls muted  playsinline height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/sim-dense-navigation.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="title is-4" style="margin-top: 3rem; text-align: center;">2. Continuous Formation Navigation</h2>
+      <video poster="" id="tree"  controls muted  playsinline height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/sim-continuous.mp4"
+        type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+Formation control of wheeled mobile robots (WMRs) has been extensively studied due to its broad applications in fields such as logistics transportation and resource exploration. 
+However, existing works mainly focus on tracking predefined formations, which limits their adaptability to complex real-world environments. 
+To address this, we propose REACT (Real-time Environment-Adaptive architecture for Continuous formation navigaTion), a hierarchical architecture integrating centralized formation generation and distributed formation maintenance. 
+Specifically, the upper layer generates new environment-adaptive formations when necessary and uses the proposed TCF-R2T (Trajectory-Conflict-Free Robot-to-Target assignment) algorithm to compute conflict-free WMR-to-target assignments in polynomial time, enabling timely formation transitions without trajectory conflicts. 
+At the lower layer, each WMR executes the developed JSTP (Joint Spatio-Temporal trajectory Planning) method to maintain the generated formation by simultaneously  optimizing spatial positions and temporal durations, thereby enhancing coordination among WMRs and enabling continuous navigation in obstacle-rich environments and dynamic-obstacle scenarios. Simulation and real-world experiments validate the effectiveness and practical applicability of REACT. 
+Experimental videos are available at our project website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+<!-- End paper abstract -->
+
+<!-- Single Image with Title (Detailed architecture) - COMMENTED OUT
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" style="max-width: 80%; margin: auto; text-align: center;">Detailed architecture of IMPACT.</h2>
+      <br>
+      <div class="image-container has-text-centered" style="max-width: 80%; margin: auto;">
+        <img src="static/images/IMPACT-framework.jpg" alt="Descriptive Alt Text" style="height: auto;"/>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- method architecture -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3" style="max-width: 80%; margin: auto; text-align: center;">REACT Architecture</h2> 
+      <div class="image-container has-text-centered" style="max-width: 60%; margin: auto;">
+        <img src="static/images/REACT-architecture-V3.jpg" alt="Descriptive Alt Text" style="height: auto;"/>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!--BibTex citation 
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+--End BibTex citation -->
+
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p class="columns is-centered">
+            This page was built using the&nbsp;<a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+          </p>
+          <p class="columns is-centered" >&copy;2026 Jianghong Dong</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- visitor location tracking -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="clustrmaps-wrapper" class="image-container has-text-centered" style="max-width: 30%; margin: auto;">
+        <!-- Your image here with adjusted width -->
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=g0sucXLX3Dp62zu38Mln8IQNG6ha4LjuHu036YSh6BY&cl=ffffff&w=a"></script>    
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  document.getElementById('clustrmaps-wrapper').addEventListener('click', function(e) {
+    var target = e.target.closest('a');
+    if (target && target.href) {
+      e.preventDefault();
+      window.open(target.href, '_blank');
+    }
+  }, true);
+</script>
+<!-- Statcounter tracking code -->
+  
+
+<div style="text-align: center;">
+<!-- Default Statcounter code for REACT
+https://dongjh20.github.io/REACT/ -->
+<script type="text/javascript">
+var sc_project=13224693; 
+var sc_invisible=0; 
+var sc_security="1699d0c6"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - Statcounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/13224693/0/1699d0c6/0/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</div>
+
+</body>
+</html>
