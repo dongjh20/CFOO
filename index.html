@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>REACT</title>
-  <link rel="icon" type="image/x-icon" href="static/images/Tsinghua_University_Logo.png">
+  <title>CFOO</title>
+  <link rel="icon" type="image/svg+xml" href="static/images/star-favicon.svg?v=3">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -35,14 +35,22 @@
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/index.css?v=paired-metrics-20260916">
+  <link rel="stylesheet" href="static/css/tvfr.css?v=caption-spacing-20260917">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <script src="static/js/index.js?v=tvfr-1"></script>
+  <script>
+    window.MathJax = {
+      tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']]},
+      svg: {fontCache: 'local'},
+      options: {enableMenu: false}
+    };
+  </script>
+  <script defer src="static/vendor/mathjax/tex-svg.js"></script>
 </head>
 <body>
 
@@ -52,9 +60,9 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Demonstration for REACT</h1>
+            <h1 class="title is-1 publication-title">Demonstration for CFOO</h1>
               <h2 class="subtitle has-text-centered"> <!-- Adjusted font size and alignment -->
-                REACT: Real-time Environment-Adaptive architecture for Continuous formation navigaTion.
+                CFOO: a Conflict-Free Online Orchestration framework for continuous formation navigation <br> of wheeled mobile robots (WMRs).
               </h2>
             <div class="is-size-5 publication-authors">
 
@@ -64,6 +72,9 @@
                 <a href="https://scholar.google.com/citations?user=ncDpC9gAAAAJ&hl=en" target="_blank">Jianghong Dong</a><sup>1</sup>,</span>
                 <span class="author-block">
                   <a href="https://scholar.google.com/citations?user=o9zHCC0AAAAJ&hl=zh-CN&inst=3212728378801010220&oi=ao" target="_blank">Yifeng Zhang</a><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://www.wenhancao.com/?lang=en" target="_blank">Wenhan Cao</a><sup>1</sup>,
                 </span>
                   <span class="author-block">
                     <a href="https://wjiawei.com/" target="_blank">Jiawei Wang</a><sup>3</sup>,
@@ -80,9 +91,151 @@
                   </span>
 
                   </div>
-                  <div class="is-size-5 publication-authors">
+<div class="is-size-5 publication-authors">
                     <span class="author-block"><sup>1</sup>Tsinghua University, <sup>2</sup>National University of Singapore, <sup>3</sup>University of Michigan</span>
                   </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<p style="text-align: center; font-size: 1.16rem; color: #e07b00; background: #fff8e1; border-left: 4px solid #f5a623; padding: 0.75rem 1.25rem; margin: 1rem auto; max-width: 860px; border-radius: 4px;">
+  <strong>Video loading:</strong> Videos may take a moment to load on the hosting platform. <br>Thank you for your patience.
+</p>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="padding-top: 1.5rem;">
+      <h2 class="title is-3" style="text-align: center;">Simulation</h2>
+      <video poster="" id="simulation-video" controls muted playsinline height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/formation_navigation_four_panels.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+       These results demonstrate CFOO's effectiveness in enabling continuous formation navigation of WMRs in varying environments. The TVFR mechanism effectively reduces motion oscillations caused by abrupt updates to JSTP’s desired formation during formation transitions.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Teaser video-->
+<section class="hero teaser" id="real-world-experiments">
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="padding-top: 1.6rem;">
+      <h2 class="title is-3" style="text-align: center;">Real-World Experiments</h2>
+            <h2 class="title is-4" style="margin-top: 3rem; text-align: center;">Continuous Formation Navigation</h2>
+      <video poster="" id="real-navigation-video" controls muted playsinline height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/real-transition.mp4?v=h264-20260911"
+        type="video/mp4"> 
+      </video>
+      <p class="subtitle has-text-centered">
+        These results demonstrate CFOO's ability to adapt WMR formations to changes in the environmental conditions while maintaining smooth, continuous navigation.
+      </p>
+  <div class="motiv-contrib-block">
+    <div class="contrib-list">
+      <div class="contrib-accordion">
+        <div class="contrib-item">
+          <span class="contrib-index"><i class="fas fa-chart-bar" style="font-size:1.3rem; color:#87CEEB;"></i></span>
+          <div class="contrib-content">
+            <p class="contrib-heading">Results &amp; Metrics</p>
+            <p>The following plots show formation error and individual WMR lateral positions. For the correspondence between WMR indices in the video above and those in the figures, see the <em>WMR Indices</em> tab.</p>
+          </div>
+        </div>
+        <div class="motiv-inline-video">
+          <div class="contrib-metric-tabs">
+            <button class="contrib-metric-tab is-active" data-metric="transition-formation-error">Formation Error &amp; Lateral Position</button>
+            <button class="contrib-metric-tab" data-metric="transition-wmr-index">WMR Indices</button>
+          </div>
+          <div class="contrib-metric-panel" id="metric-transition-formation-error">
+            <div class="contrib-metric-pair">
+              <figure>
+                <figcaption>Formation Error Metric</figcaption>
+                <img src="static/images/transition-metric.jpg" alt="Formation Error Metric">
+              </figure>
+              <figure>
+                <figcaption>Lateral Position</figcaption>
+                <img src="static/images/transition-y.jpg" alt="Lateral Position">
+              </figure>
+            </div>
+          </div>
+          <div class="contrib-metric-panel" id="metric-transition-wmr-index" style="display:none;">
+            <img src="static/images/WMR-index-V2.jpg" alt="WMR Indices" style="width:50%; display:block; margin:0 auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+
+
+<!-- Simulation comparison -->
+<section class="section tvfr-section" id="tvfr-comparison" aria-labelledby="tvfr-title">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered" id="tvfr-title">Smoother Formation Transitions with TVFR</h2>
+    <p class="tvfr-subtitle">TVFR: the Time-Varying Formation Reference mechanism</p>
+    <p class="tvfr-intro">
+      TVFR gradually evolves the desired formation instead of imposing an abrupt target change.
+      The event-aligned simulation replays below compare <strong>Without TVFR</strong>
+      (instantaneous reference update) and <strong>With TVFR</strong>
+      (smoothly evolving references) during the 3-to-2 and 1-to-3 formation transitions,
+      using identical obstacle geometry, reference route, initial conditions, and transition trigger rules.
+    </p>
+    <video id="tvfr-comparison-video" class="tvfr-video" controls muted playsinline preload="metadata"
+           poster="static/images/tvfr_comparison_poster.png?v=transition-wording-20260917"
+           aria-label="Without TVFR and With TVFR formation transitions shown side by side">
+      <source src="static/videos/tvfr_comparison.mp4?v=f44d37e" type="video/mp4">
+      Your browser does not support embedded video. <a href="static/videos/tvfr_comparison.mp4?v=f44d37e">Download the comparison video.</a>
+    </video>
+    <p class="tvfr-caption">Left: <strong>Without TVFR</strong>. Right: <strong>With TVFR</strong>.
+      Both views use 1× playback and identical spatial scales. The 3→2 comparison is followed by 1→3.</p>
+    <div class="motiv-contrib-block">
+      <div class="contrib-list">
+        <div class="contrib-accordion">
+          <div class="contrib-item">
+            <span class="contrib-index"><i class="fas fa-chart-bar" aria-hidden="true" style="font-size:1.3rem; color:#87CEEB;"></i></span>
+            <div class="contrib-content">
+              <p class="contrib-heading">Transition Trajectories &amp; Motion Smoothness</p>
+              <p>Recorded motion of all seven WMRs, aligned at the transition event (\(t=0\)).
+              </p>
+            </div>
+          </div>
+          <div class="motiv-inline-video">
+            <div class="contrib-metric-panel tvfr-result" id="metric-tvfr-trajectories">
+              <h3 class="tvfr-result-title">Transition Trajectories</h3>
+              <a href="static/images/tvfr_trajectory_comparison.png?v=transition-wording-20260917" target="_blank" rel="noopener">
+                <img src="static/images/tvfr_trajectory_comparison.png?v=transition-wording-20260917" loading="lazy"
+                     alt="Recorded trajectories for the 3-to-2 and 1-to-3 transitions: Without TVFR on the left and With TVFR on the right.">
+              </a>
+              <p class="tvfr-caption">Matched x–y limits and equal metric aspect ratios within each comparison.
+                Colored dots mark each WMR's position at the transition event. Click the figure to enlarge.</p>
+            </div>
+            <div class="contrib-metric-panel tvfr-result" id="metric-tvfr-transients">
+              <h3 class="tvfr-result-title">Motion Smoothness</h3>
+              <a href="static/images/tvfr_transient_comparison.png?v=longitudinal-20260917" target="_blank" rel="noopener">
+                <img src="static/images/tvfr_transient_comparison.png?v=longitudinal-20260917" loading="lazy"
+                     alt="Lateral and longitudinal velocity traces and per-WMR excess lateral travel: Without TVFR versus With TVFR.">
+              </a>
+              <div class="tvfr-metric-explanation">
+              <p class="tvfr-caption">Top: lateral velocity. Middle: longitudinal velocity.
+                Bottom: excess lateral travel during the first 16 s after transition onset.
+                This measures lateral back-and-forth motion beyond the net displacement.</p>
+              <div class="tvfr-equation">
+                \[E_{y,u}=\sum_k |y_{u,k+1}-y_{u,k}|-|y_{u,\mathrm{end}}-y_{u,\mathrm{start}}|.\]
+              </div>
+              <p class="tvfr-caption">Here, \(u\) indexes WMRs and \(k\) indexes samples.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -91,221 +244,119 @@
   </div>
 </section>
 
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
+<section class="section hero is-light tvfr-section" id="additional-costs" aria-labelledby="costs-title">
   <div class="container is-max-desktop">
-    <div class="hero-body" style="padding-top: 1.6rem;">
-      <h2 class="title is-3;" style="text-align: center;">Real-World Experiments</h2>
-      <h2 class="title is-4" style="margin-top: 3rem; text-align: center;">1. Formation Convergence</h2>
-      <video poster="" id="tree"controls muted playsinline height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/real-convergence.mp4"
-        type="video/mp4">
-      </video>
-  <div class="motiv-contrib-block">
-    <div class="contrib-list">
-      <div class="contrib-accordion">
-        <div class="contrib-item contrib-item-clickable" onclick="toggleContribItem(this)">
-          <span class="contrib-index"><i class="fas fa-chart-bar" style="font-size:1.3rem; color:#87CEEB;"></i></span>
-          <div class="contrib-content">
-            <p class="contrib-heading">Results &amp; Metrics <i class="fas fa-chevron-down motiv-play-hint motiv-chevron"></i><span class="motiv-click-hint">click</span></p>
-            <p>Click to view quantitative evaluation results including formation error metrics and speed profiles. For the correspondence between WMR indices in the video above and those in the figures, see the <em>WMR-Index</em> tab.</p>
-          </div>
-        </div>
-        <div class="motiv-inline-video">
-          <div class="contrib-metric-tabs">
-            <button class="contrib-metric-tab is-active" data-metric="formation-error">Formation Error Metric</button>
-            <button class="contrib-metric-tab" data-metric="velocity">Speed</button>
-            <button class="contrib-metric-tab" data-metric="convergence-wmr-index">WMR-Index</button>
-          </div>
-          <div class="contrib-metric-panel" id="metric-formation-error">
-            <img src="static/images/convergence-metric.jpg" alt="Formation Error Metric" style="width:50%; display:block; margin:0 auto;">
-          </div>
-          <div class="contrib-metric-panel" id="metric-velocity" style="display:none;">
-            <img src="static/images/convergence-sped.jpg" alt="Velocity Metric" style="width:50%; display:block; margin:0 auto;">
-          </div>
-          <div class="contrib-metric-panel" id="metric-convergence-wmr-index" style="display:none;">
-            <img src="static/images/WMR-index-V1.jpg" alt="WMR-Index" style="width:50%; display:block; margin:0 auto;">
-          </div>
-        </div>
+    <h2 class="title is-3 has-text-centered" id="costs-title">Motion Regularization \(\mathcal{P}_{\mathrm{add}}\)</h2>
+    <p class="tvfr-intro">
+      The motion regularization term \(\mathcal P_{\mathrm{add}}\) complements the graph-based formation maintenance cost
+      \(\mathcal P_{\mathrm{form}}\) with relative-position, relative-velocity, and lateral route-anchoring costs.
+      Here, \(\mathbf p_u\) and \(\dot{\mathbf p}_u\) denote the position and velocity of WMR \(u\in\mathcal V\),
+      while \(\mathbf r_u\) and \(\dot{\mathbf r}_u\) denote its TVFR reference and reference velocity.
+      Overbars denote averages over all \(N\) WMRs.
+    </p>
+    <p class="tvfr-intro">
+      Each WMR optimizes its own trajectory using received trajectories of the other WMRs.
+      All positions, velocities, and references are evaluated at the same global timestamp \(\tau_j\).
+      The ego position is \(\mathbf p_i(t_j)\), while the position \(\mathbf p_u(\tau_j)\) of each other WMR \(u\) is evaluated from its received trajectory.
+      The local sample time is \(t_j=jT_i/K_i\), with \(\tau_j=\sum_{r=1}^{i-1}T_r+t_j\).
+      Here, \(u\) indexes WMRs, while \(i\) and \(j\) index polynomial segments and samples, respectively.
+      Time arguments are omitted below for brevity.
+    </p>
+    <article class="tvfr-cost-card">
+      <h3 class="title is-4">1. Relative-Position Cost</h3>
+      <p>The graph-based formation cost does not uniquely determine formation orientation.
+        With isotropic distance weights (\(a=1\)), it is invariant to global rotation.
+        We therefore penalize centroid-relative position errors to align the formation while preserving translational freedom:</p>
+      <div class="tvfr-equation">
+        \[
+        \begin{gathered}
+          \mathbf e_{\mathrm{pos},u}=(\mathbf p_u-\bar{\mathbf p})-(\mathbf r_u-\bar{\mathbf r}),\\
+          g_{\mathrm{pos}}=\frac{1}{N}\sum_{u\in\mathcal V}\|\mathbf e_{\mathrm{pos},u}\|_2^2,\\
+          \frac{\partial g_{\mathrm{pos}}}{\partial\mathbf p_u}=\frac{2}{N}\mathbf e_{\mathrm{pos},u}.
+        \end{gathered}
+        \]
       </div>
-    </div>
-  </div>
-
-      <h2 class="title is-4" style="margin-top: 3rem; text-align: center;">2.1 Obstacle Avoidance: Inside</h2>
-      <video poster="" id="tree"  controls muted playsinline height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/real-obs-inside.mp4"
-        type="video/mp4">
-      </video>
-  <div class="motiv-contrib-block">
-    <div class="contrib-list">
-      <div class="contrib-accordion">
-        <div class="contrib-item contrib-item-clickable" onclick="toggleContribItem(this)">
-          <span class="contrib-index"><i class="fas fa-chart-bar" style="font-size:1.3rem; color:#87CEEB;"></i></span>
-          <div class="contrib-content">
-            <p class="contrib-heading">Results &amp; Metrics <i class="fas fa-chevron-down motiv-play-hint motiv-chevron"></i><span class="motiv-click-hint">click</span></p>
-            <p>Click to view quantitative evaluation results including formation error metrics and lateral position (WMR 2 and WMR 3, whose y-trajectories change for obstacle avoidance). For the correspondence between WMR indices in the video above and those in the figures, see the <em>WMR-Index</em> tab.</p>
-          </div>
-        </div>
-        <div class="motiv-inline-video">
-          <div class="contrib-metric-tabs">
-            <button class="contrib-metric-tab is-active" data-metric="obs-inside-formation-error">Formation Error Metric</button>
-            <button class="contrib-metric-tab" data-metric="obs-inside-lateral">Lateral Position</button>
-            <button class="contrib-metric-tab" data-metric="obs-inside-wmr-index">WMR-Index</button>
-          </div>
-          <div class="contrib-metric-panel" id="metric-obs-inside-formation-error">
-            <img src="static/images/obs-inside-metric.jpg" alt="Formation Error Metric" style="width:50%; display:block; margin:0 auto;">
-          </div>
-          <div class="contrib-metric-panel" id="metric-obs-inside-lateral" style="display:none;">
-            <img src="static/images/obs-inside-y.jpg" alt="Lateral Position" style="width:50%; display:block; margin:0 auto;">
-          </div>
-          <div class="contrib-metric-panel" id="metric-obs-inside-wmr-index" style="display:none;">
-            <img src="static/images/WMR-index-V2.jpg" alt="WMR-Index" style="width:50%; display:block; margin:0 auto;">
-          </div>
-        </div>
+      <p>This term promotes the relative positions and orientation specified by the TVFR reference without fixing the formation centroid.</p>
+    </article>
+    <article class="tvfr-cost-card">
+      <h3 class="title is-4">2. Relative-Velocity Cost</h3>
+      <p>Tracking relative positions alone may cause repeated acceleration and braking.
+        We therefore penalize the difference between centroid-relative velocities and the corresponding TVFR reference derivatives:</p>
+      <div class="tvfr-equation">
+        \[
+        \begin{gathered}
+          \mathbf e_{\mathrm{vel},u}=(\dot{\mathbf p}_u-\overline{\dot{\mathbf p}})-(\dot{\mathbf r}_u-\overline{\dot{\mathbf r}}),\\
+          g_{\mathrm{vel}}=\frac{1}{N}\sum_{u\in\mathcal V}\|\mathbf e_{\mathrm{vel},u}\|_2^2,\\
+          \frac{\partial g_{\mathrm{vel}}}{\partial\dot{\mathbf p}_u}=\frac{2}{N}\mathbf e_{\mathrm{vel},u}.
+        \end{gathered}
+        \]
       </div>
-    </div>
-  </div>
-      <h2 class="title is-4" style="margin-top: 3rem; text-align: center;">2.2 Obstacle Avoidance: Outside</h2>
-      <video poster="" id="tree"  controls muted playsinline height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/real-obs-outside.mp4"
-        type="video/mp4"> 
-      </video>
-  <div class="motiv-contrib-block">
-    <div class="contrib-list">
-      <div class="contrib-accordion">
-        <div class="contrib-item contrib-item-clickable" onclick="toggleContribItem(this)">
-          <span class="contrib-index"><i class="fas fa-chart-bar" style="font-size:1.3rem; color:#87CEEB;"></i></span>
-          <div class="contrib-content">
-            <p class="contrib-heading">Results &amp; Metrics <i class="fas fa-chevron-down motiv-play-hint motiv-chevron"></i><span class="motiv-click-hint">click</span></p>
-            <p>Click to view quantitative evaluation results including formation error metrics and lateral position (WMR 2 and WMR 3, whose y-trajectories change for obstacle avoidance). For the correspondence between WMR indices in the video above and those in the figures, see the <em>WMR-Index</em> tab.</p>
-          </div>
-        </div>
-        <div class="motiv-inline-video">
-          <div class="contrib-metric-tabs">
-            <button class="contrib-metric-tab is-active" data-metric="obs-outside-formation-error">Formation Error Metric</button>
-            <button class="contrib-metric-tab" data-metric="obs-outside-lateral">Lateral Position</button>
-            <button class="contrib-metric-tab" data-metric="obs-outside-wmr-index">WMR-Index</button>
-          </div>
-          <div class="contrib-metric-panel" id="metric-obs-outside-formation-error">
-            <img src="static/images/obs-outside-metric.jpg" alt="Formation Error Metric" style="width:50%; display:block; margin:0 auto;">
-          </div>
-          <div class="contrib-metric-panel" id="metric-obs-outside-lateral" style="display:none;">
-            <img src="static/images/obs-outside-y.jpg" alt="Lateral Position" style="width:50%; display:block; margin:0 auto;">
-          </div>
-          <div class="contrib-metric-panel" id="metric-obs-outside-wmr-index" style="display:none;">
-            <img src="static/images/WMR-index-V2.jpg" alt="WMR-Index" style="width:50%; display:block; margin:0 auto;">
-          </div>
-        </div>
+      <p>During formation transitions, this term coordinates the relative motion specified by TVFR.
+        Once the reference becomes constant, it encourages a common team velocity without requiring the WMRs to stop.
+        With acceleration \(\ddot{\mathbf p}_u\), the common-time derivatives of the position and velocity costs are:</p>
+      <div class="tvfr-equation">
+        \[
+        \begin{gathered}
+          \frac{\mathrm d g_{\mathrm{pos}}}{\mathrm dt}=\frac{2}{N}\sum_{u\in\mathcal V}\mathbf e_{\mathrm{pos},u}^{\top}(\dot{\mathbf p}_u-\dot{\mathbf r}_u),\\
+          \frac{\mathrm d g_{\mathrm{vel}}}{\mathrm dt}=\frac{2}{N}\sum_{u\in\mathcal V}\mathbf e_{\mathrm{vel},u}^{\top}(\ddot{\mathbf p}_u-\ddot{\mathbf r}_u).
+        \end{gathered}
+        \]
       </div>
-    </div>
-  </div>
-      <h2 class="title is-4" style="margin-top: 3rem; text-align: center;">2.3 Obstacle Avoidance: Dynamic</h2>
-      <video poster="" id="tree"  controls muted playsinline height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/real-obs-dynamic.mp4"
-        type="video/mp4"> 
-      </video>
-  <div class="motiv-contrib-block">
-    <div class="contrib-list">
-      <div class="contrib-accordion">
-        <div class="contrib-item contrib-item-clickable" onclick="toggleContribItem(this)">
-          <span class="contrib-index"><i class="fas fa-chart-bar" style="font-size:1.3rem; color:#87CEEB;"></i></span>
-          <div class="contrib-content">
-            <p class="contrib-heading">Results &amp; Metrics <i class="fas fa-chevron-down motiv-play-hint motiv-chevron"></i><span class="motiv-click-hint">click</span></p>
-            <p>Click to view quantitative evaluation results including formation error metrics and lateral position (WMR 2 and WMR 3, whose y-trajectories change for obstacle avoidance), as well as the view from the motion capture system. For the correspondence between WMR indices in the video above and those in the figures, see the <em>WMR-Index</em> tab.</p>
-          </div>
-        </div>
-        <div class="motiv-inline-video">
-          <div class="contrib-metric-tabs">
-            <button class="contrib-metric-tab is-active" data-metric="obs-dynamic-formation-error">Formation Error Metric</button>
-            <button class="contrib-metric-tab" data-metric="obs-dynamic-lateral">Lateral Position</button>
-            <button class="contrib-metric-tab" data-metric="obs-dynamic-mocap">Motion Capture View</button>
-            <button class="contrib-metric-tab" data-metric="obs-dynamic-wmr-index">WMR-Index</button>
-          </div>
-          <div class="contrib-metric-panel" id="metric-obs-dynamic-formation-error">
-            <img src="static/images/obs-dynamic-metric.jpg" alt="Formation Error Metric" style="width:50%; display:block; margin:0 auto;">
-          </div>
-          <div class="contrib-metric-panel" id="metric-obs-dynamic-lateral" style="display:none;">
-            <img src="static/images/obs-dynamic-y.jpg" alt="Lateral Position" style="width:50%; display:block; margin:0 auto;">
-          </div>
-          <div class="contrib-metric-panel" id="metric-obs-dynamic-mocap" style="display:none;">
-            <video controls playsinline style="width:100%; display:block; margin:0 auto;">
-              <source src="static/videos/obs-dynamic-FZMotion.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="contrib-metric-panel" id="metric-obs-dynamic-wmr-index" style="display:none;">
-            <img src="static/images/WMR-index-V2.jpg" alt="WMR-Index" style="width:50%; display:block; margin:0 auto;">
-          </div>
-        </div>
+    </article>
+    <article class="tvfr-cost-card">
+      <h3 class="title is-4">3. Lateral Route Anchoring</h3>
+      <p>Relative-position and relative-velocity costs do not prevent collective lateral drift.
+        During formation transitions along straight route segments, we penalize lateral centroid position error and velocity.
+        The fixed lateral target \(y_c=y_{\mathrm{route}}+\delta_y\) combines the route coordinate with the mean assigned-slot offset \(\delta_y\):</p>
+      <div class="tvfr-equation">
+        \[
+        \begin{gathered}
+          g_y=(\bar y-y_c)^2,
+          \qquad g_{\dot y}=\overline{\dot y}^{\,2},\\
+          \frac{\partial g_y}{\partial\mathbf p_u}=\frac{2}{N}(\bar y-y_c)\mathbf e_y,
+          \qquad \frac{\partial g_{\dot y}}{\partial\dot{\mathbf p}_u}=\frac{2}{N}\overline{\dot y}\,\mathbf e_y.
+        \\
+        \mathbf e_y=(0,1)^{\mathsf T}.
+        \end{gathered}
+        \]
       </div>
-    </div>
-  </div>
-      <h2 class="title is-4" style="margin-top: 3rem; text-align: center;">3. Formation Transition</h2>
-      <video poster="" id="tree"  controls muted playsinline height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/real-transition.mp4"
-        type="video/mp4"> 
-      </video>
-  <div class="motiv-contrib-block">
-    <div class="contrib-list">
-      <div class="contrib-accordion">
-        <div class="contrib-item contrib-item-clickable" onclick="toggleContribItem(this)">
-          <span class="contrib-index"><i class="fas fa-chart-bar" style="font-size:1.3rem; color:#87CEEB;"></i></span>
-          <div class="contrib-content">
-            <p class="contrib-heading">Results &amp; Metrics <i class="fas fa-chevron-down motiv-play-hint motiv-chevron"></i><span class="motiv-click-hint">click</span></p>
-            <p>Click to view quantitative evaluation results including formation error metrics and lateral position. For the correspondence between WMR indices in the video above and those in the figures, see the <em>WMR-Index</em> tab.</p>
-          </div>
-        </div>
-        <div class="motiv-inline-video">
-          <div class="contrib-metric-tabs">
-            <button class="contrib-metric-tab is-active" data-metric="transition-formation-error">Formation Error Metric</button>
-            <button class="contrib-metric-tab" data-metric="transition-lateral">Lateral Position</button>
-            <button class="contrib-metric-tab" data-metric="transition-wmr-index">WMR-Index</button>
-          </div>
-          <div class="contrib-metric-panel" id="metric-transition-formation-error">
-            <img src="static/images/transition-metric.jpg" alt="Formation Error Metric" style="width:50%; display:block; margin:0 auto;">
-          </div>
-          <div class="contrib-metric-panel" id="metric-transition-lateral" style="display:none;">
-            <img src="static/images/transition-y.jpg" alt="Lateral Position" style="width:50%; display:block; margin:0 auto;">
-          </div>
-          <div class="contrib-metric-panel" id="metric-transition-wmr-index" style="display:none;">
-            <img src="static/images/WMR-index-V2.jpg" alt="WMR-Index" style="width:50%; display:block; margin:0 auto;">
-          </div>
-        </div>
+      <p>These terms suppress collective lateral drift while leaving longitudinal motion unpenalized.
+        With \(y_c\) fixed on each straight segment, \(\mathrm d g_y/\mathrm dt=2(\bar y-y_c)\overline{\dot y}\) and
+        \(\mathrm d g_{\dot y}/\mathrm dt=2\overline{\dot y}\,\overline{\ddot y}\).</p>
+    </article>
+    <div class="tvfr-cost-summary">
+      <p>The instantaneous motion regularization cost combines the three components:</p>
+      <div class="tvfr-equation">
+        \[
+          \begin{gathered}
+          g_{\mathrm{lat}}=\alpha_p g_y+\alpha_v g_{\dot y},\\
+          g_{\mathrm{add}}=\alpha_p g_{\mathrm{pos}}+\alpha_v g_{\mathrm{vel}}+g_{\mathrm{lat}},
+          \qquad\alpha_p,\alpha_v\geq0.
+          \end{gathered}
+        \]
       </div>
-    </div>
-  </div>
+      <p>Trapezoidal integration over the trajectory yields the motion regularization term used in JSTP:</p>
+      <div class="tvfr-equation">
+        \[
+          \begin{gathered}
+          \mathcal P_{\mathrm{add}}
+          =\sum_{i=1}^{M}\frac{T_i}{K_i}
+            \sum_{j=0}^{K_i}\omega_j\,g_{\mathrm{add}}(t_j,\tau_j),\\
+          t_j=\frac{jT_i}{K_i},\qquad
+          \tau_j=\sum_{r=1}^{i-1}T_r+t_j.
+          \end{gathered}
+        \]
+      </div>
+      <p>Here \(\omega_0=\omega_{K_i}=1/2\) and the interior weights equal one.
+        The ego state is evaluated at local time \(t_j\); received trajectories of other WMRs and TVFR references
+        are evaluated at the corresponding global time \(\tau_j\), using a common time origin.
+        The nonnegative weights \(\alpha_p\) and \(\alpha_v\) balance the position and velocity costs.
+        </p>
+      <p>Gradients are propagated through the \(\mathfrak{T}_{\mathrm{MINCO}}\) trajectory parameterization,
+        accounting for both local sampling times and global timestamps when differentiating segment durations.</p>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body" style="padding-top: 1.5rem;">
-      <h2 class="title is-3;" style="text-align: center;">Simulation</h2>
-      <h2 class="title is-4" style="margin-top: 3rem; text-align: center;">1. Formation Navigation in Obstacle-Rich Environments</h2>
-      <video poster="" id="tree"  controls muted  playsinline height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/sim-dense-navigation.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="title is-4" style="margin-top: 3rem; text-align: center;">2. Continuous Formation Navigation</h2>
-      <video poster="" id="tree"  controls muted  playsinline height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/sim-continuous.mp4"
-        type="video/mp4">
-      </video>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -315,12 +366,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-Formation control of wheeled mobile robots (WMRs) has been extensively studied due to its broad applications in fields such as logistics transportation and resource exploration. 
-However, existing works mainly focus on tracking predefined formations, which limits their adaptability to complex real-world environments. 
-To address this, we propose REACT (Real-time Environment-Adaptive architecture for Continuous formation navigaTion), a hierarchical architecture integrating centralized formation generation and distributed formation maintenance. 
-Specifically, the upper layer generates new environment-adaptive formations when necessary and uses the proposed TCF-R2T (Trajectory-Conflict-Free Robot-to-Target assignment) algorithm to compute conflict-free WMR-to-target assignments in polynomial time, enabling timely formation transitions without trajectory conflicts. 
-At the lower layer, each WMR executes the developed JSTP (Joint Spatio-Temporal trajectory Planning) method to maintain the generated formation by simultaneously  optimizing spatial positions and temporal durations, thereby enhancing coordination among WMRs and enabling continuous navigation in obstacle-rich environments and dynamic-obstacle scenarios. Simulation and real-world experiments validate the effectiveness and practical applicability of REACT. 
-Experimental videos are available at our project website.
+Formation control of wheeled mobile robots (WMRs) has been widely studied due to its broad applications. However, existing studies primarily focus on tracking predefined formations, with limited adaptability to varying environments. To address this limitation, we propose CFOO, a Conflict-Free Online Orchestration framework for continuous formation navigation of WMRs that integrates centralized formation generation with distributed formation maintenance. The upper layer monitors the environment in real time and generates adaptive formations as needed, using the proposed TCF-R2T (Trajectory-Conflict-Free Robot-to-Target assignment) algorithm to compute optimal assignments in polynomial time for timely, conflict-free formation transitions. At the lower layer, each WMR continuously employs JSTP (Joint Spatio-Temporal trajectory Planning) to maintain the given formation by jointly optimizing spatial positions and segment durations, improving coordination over spatial-only optimization with fixed durations. By coordinating these two layers, CFOO orchestrates WMRs to adapt their formations to varying environments and thus enable continuous navigation. Moreover, we design a Time-Varying Formation Reference (TVFR) mechanism to facilitate smooth transitions between successive desired formations. Both simulation and real-world experiments validate the effectiveness and adaptability of CFOO. Experimental videos are available on our project website.
           </p>
         </div>
       </div>
@@ -380,27 +426,32 @@ Experimental videos are available at our project website.
     </div>
   </div>
 </footer>
-<!-- visitor location tracking -->
 
+<!-- visitor location tracking -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="clustrmaps-wrapper" class="image-container has-text-centered" style="max-width: 30%; margin: auto;">
+      <div id="clustrmaps-wrapper" class="image-container has-text-centered" style="max-width: 30%; margin: auto; pointer-events: none;">
         <!-- Your image here with adjusted width -->
-        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=xe3ngu_ZRwiaev3YuJlMriD6KKm7fhMgHwOKk3BQyWE&cl=ffffff&w=a"></script>    
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=g0sucXLX3Dp62zu38Mln8IQNG6ha4LjuHu036YSh6BY&cl=ffffff&w=a"></script>   
       </div>
     </div>
   </div>
 </section>
-<script>
-  document.getElementById('clustrmaps-wrapper').addEventListener('click', function(e) {
-    var target = e.target.closest('a');
-    if (target && target.href) {
-      e.preventDefault();
-      window.open(target.href, '_blank');
-    }
-  }, true);
-</script>
+
+<section class="hero is-small" style="display:none;">
+  <div class="hero-body">
+    <div class="container">
+      <div id="clustrmaps-wrapper" class="image-container has-text-centered" style="max-width: 30%; margin: auto;">
+        <!-- Your image here with adjusted width -->
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=M2aT_nIh8hQ_w3u0LCX6RrKp3uKmcLNdfZq5GtuvXkA&cl=ffffff&w=a"></script>   
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 <!-- Statcounter tracking code -->
   
 
